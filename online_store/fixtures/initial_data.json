@@ -1,0 +1,467 @@
+[
+  {
+    "model": "online_store.user",
+    "pk": 1,
+    "fields": {
+      "email": "john.doe@example.com",
+      "username": "johndoe",
+      "password": "password123",
+      "first_name": "John",
+      "last_name": "Doe"
+    }
+  },
+  {
+    "model": "online_store.category",
+    "pk": 1,
+    "fields": {
+      "name": "Electronics"
+    }
+  },
+  {
+    "model": "online_store.category",
+    "pk": 2,
+    "fields": {
+      "name": "Jewelry"
+    }
+  },
+  {
+    "model": "online_store.category",
+    "pk": 3,
+    "fields": {
+      "name": "Men's clothing"
+    }
+  },
+  {
+    "model": "online_store.category",
+    "pk": 4,
+    "fields": {
+      "name": "Women's clothing"
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 1,
+    "fields": {
+      "count": 150,
+      "rate": 4.5
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 2,
+    "fields": {
+      "count": 200,
+      "rate": 4.7
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 3,
+    "fields": {
+      "count": 120,
+      "rate": 4.3
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 4,
+    "fields": {
+      "count": 80,
+      "rate": 4.0
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 5,
+    "fields": {
+      "count": 50,
+      "rate": 3.9
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 6,
+    "fields": {
+      "count": 95,
+      "rate": 4.4
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 7,
+    "fields": {
+      "count": 70,
+      "rate": 3.8
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 8,
+    "fields": {
+      "count": 60,
+      "rate": 4.1
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 9,
+    "fields": {
+      "count": 40,
+      "rate": 3.7
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 10,
+    "fields": {
+      "count": 110,
+      "rate": 4.6
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 11,
+    "fields": {
+      "count": 85,
+      "rate": 4.2
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 12,
+    "fields": {
+      "count": 130,
+      "rate": 4.5
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 13,
+    "fields": {
+      "count": 190,
+      "rate": 4.8
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 14,
+    "fields": {
+      "count": 65,
+      "rate": 3.9
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 15,
+    "fields": {
+      "count": 140,
+      "rate": 4.3
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 16,
+    "fields": {
+      "count": 45,
+      "rate": 3.6
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 17,
+    "fields": {
+      "count": 210,
+      "rate": 4.9
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 18,
+    "fields": {
+      "count": 160,
+      "rate": 4.4
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 19,
+    "fields": {
+      "count": 100,
+      "rate": 4.2
+    }
+  },
+  {
+    "model": "online_store.rating",
+    "pk": 20,
+    "fields": {
+      "count": 175,
+      "rate": 4.7
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 1,
+    "fields": {
+      "title": "Smartphone A",
+      "price": 299.99,
+      "category": 1,
+      "description": "A cutting-edge smartphone with a powerful processor and high-resolution display.",
+      "image": "product_images/smartphone_a.jpg",
+      "rating": 1
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 2,
+    "fields": {
+      "title": "Laptop B",
+      "price": 899.99,
+      "category": 1,
+      "description": "Laptop B is designed for professionals on the go, featuring a lightweight design and long battery life.",
+      "image": "product_images/laptop_b.jpg",
+      "rating": 2
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 3,
+    "fields": {
+      "title": "Wireless Headphones C",
+      "price": 199.99,
+      "category": 1,
+      "description": "Experience high-fidelity sound with these wireless headphones that offer noise cancellation and superior comfort.",
+      "image": "product_images/headphones_c.jpg",
+      "rating": 3
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 4,
+    "fields": {
+      "title": "Smartwatch D",
+      "price": 149.99,
+      "category": 1,
+      "description": "Keep track of your fitness goals and notifications with this stylish smartwatch.",
+      "image": "product_images/smartwatch_d.jpg",
+      "rating": 4
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 5,
+    "fields": {
+      "title": "Tablet E",
+      "price": 499.99,
+      "category": 1,
+      "description": "A versatile tablet for work and play, with a large display and fast processor.",
+      "image": "product_images/tablet_e.jpg",
+      "rating": 5
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 6,
+    "fields": {
+      "title": "Diamond Ring F",
+      "price": 2999.99,
+      "category": 2,
+      "description": "A stunning diamond ring with a brilliant-cut stone set in platinum.",
+      "image": "product_images/ring_f.jpg",
+      "rating": 6
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 7,
+    "fields": {
+      "title": "Gold Necklace G",
+      "price": 999.99,
+      "category": 2,
+      "description": "Elegant gold necklace with intricate detailing, perfect for any special occasion.",
+      "image": "product_images/necklace_g.jpg",
+      "rating": 7
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 8,
+    "fields": {
+      "title": "Silver Bracelet H",
+      "price": 199.99,
+      "category": 2,
+      "description": "A beautiful silver bracelet with a minimalist design.",
+      "image": "product_images/bracelet_h.jpg",
+      "rating": 8
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 9,
+    "fields": {
+      "title": "Pearl Earrings I",
+      "price": 499.99,
+      "category": 2,
+      "description": "Classic pearl earrings that exude timeless elegance.",
+      "image": "product_images/earrings_i.jpg",
+      "rating": 9
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 10,
+    "fields": {
+      "title": "Emerald Pendant J",
+      "price": 1999.99,
+      "category": 2,
+      "description": "An exquisite emerald pendant, set in white gold, radiating a vibrant green hue.",
+      "image": "product_images/pendant_j.jpg",
+      "rating": 10
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 11,
+    "fields": {
+      "title": "Men's T-Shirt K",
+      "price": 29.99,
+      "category": 3,
+      "description": "A comfortable cotton t-shirt, perfect for casual wear.",
+      "image": "product_images/tshirt_k.jpg",
+      "rating": 11
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 12,
+    "fields": {
+      "title": "Men's Jeans L",
+      "price": 59.99,
+      "category": 3,
+      "description": "Durable and stylish jeans that offer both comfort and style.",
+      "image": "product_images/jeans_l.jpg",
+      "rating": 12
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 13,
+    "fields": {
+      "title": "Men's Jacket M",
+      "price": 149.99,
+      "category": 3,
+      "description": "A versatile jacket that keeps you warm in the cold weather.",
+      "image": "product_images/jacket_m.jpg",
+      "rating": 13
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 14,
+    "fields": {
+      "title": "Men's Sweater N",
+      "price": 79.99,
+      "category": 3,
+      "description": "A cozy sweater made from premium wool, ideal for the winter season.",
+      "image": "product_images/sweater_n.jpg",
+      "rating": 14
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 15,
+    "fields": {
+      "title": "Men's Sneakers O",
+      "price": 89.99,
+      "category": 3,
+      "description": "Stylish and comfortable sneakers for everyday wear.",
+      "image": "product_images/sneakers_o.jpg",
+      "rating": 15
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 16,
+    "fields": {
+      "title": "Women's Dress P",
+      "price": 99.99,
+      "category": 4,
+      "description": "A beautiful dress that is perfect for both casual and formal occasions.",
+      "image": "product_images/dress_p.jpg",
+      "rating": 16
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 17,
+    "fields": {
+      "title": "Women's Blouse Q",
+      "price": 49.99,
+      "category": 4,
+      "description": "A stylish blouse that can be paired with skirts or trousers for a chic look.",
+      "image": "product_images/blouse_q.jpg",
+      "rating": 17
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 18,
+    "fields": {
+      "title": "Women's Skirt R",
+      "price": 39.99,
+      "category": 4,
+      "description": "A flowy skirt that is both comfortable and fashionable.",
+      "image": "product_images/skirt_r.jpg",
+      "rating": 18
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 19,
+    "fields": {
+      "title": "Women's Coat S",
+      "price": 199.99,
+      "category": 4,
+      "description": "A warm coat that combines style with functionality.",
+      "image": "product_images/coat_s.jpg",
+      "rating": 19
+    }
+  },
+  {
+    "model": "online_store.product",
+    "pk": 20,
+    "fields": {
+      "title": "Women's Boots T",
+      "price": 129.99,
+      "category": 4,
+      "description": "Elegant boots made from high-quality leather, perfect for the winter season.",
+      "image": "product_images/boots_t.jpg",
+      "rating": 20
+    }
+  },
+  {
+    "model": "online_store.usercart",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "created_at": "2024-08-20T12:00:00Z"
+    }
+  },
+  {
+    "model": "online_store.cartitem",
+    "pk": 1,
+    "fields": {
+      "user_cart": 1,
+      "product": 1,
+      "quantity": 2
+    }
+  },
+  {
+    "model": "online_store.cartitem",
+    "pk": 2,
+    "fields": {
+      "user_cart": 1,
+      "product": 2,
+      "quantity": 1
+    }
+  }
+]
