@@ -9,11 +9,11 @@ from online_store.views import (
     RatingViewSet,
     UserCartViewSet,
     RegisterView,
+    CustomTokenObtainPairView,
 )
 from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework_simplejwt.views import (
-    TokenObtainPairView,
     TokenRefreshView,
 )
 
@@ -25,7 +25,9 @@ router.register(r"user_cart", UserCartViewSet)
 router.register(r"categories", CategoryViewSet)
 
 urlpatterns = [
-    path("token", TokenObtainPairView.as_view(), name="token_obtain_pair"),
+    path(
+        "token", CustomTokenObtainPairView.as_view(), name="token_obtain_pair"
+    ),
     path("token/refresh", TokenRefreshView.as_view(), name="token_refresh"),
     path("admin/", admin.site.urls),
     path("api/", include(router.urls)),
