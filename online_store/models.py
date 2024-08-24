@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
 
 class Category(models.Model):
@@ -31,10 +32,10 @@ class Product(models.Model):
         return self.title
 
 
-class User(models.Model):
+class User(AbstractUser):
     id = models.AutoField(primary_key=True)
-    email = models.CharField(max_length=255)
-    username = models.CharField(max_length=255)
+    email = models.CharField(max_length=255, unique=True)
+    username = models.CharField(max_length=255, unique=True)
     password = models.CharField(max_length=255)
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
@@ -45,7 +46,9 @@ class User(models.Model):
 
 class UserCart(models.Model):
     id = models.AutoField(primary_key=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="carts")
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="carts"
+    )
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
