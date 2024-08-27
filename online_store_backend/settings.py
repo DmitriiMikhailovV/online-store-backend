@@ -1,5 +1,9 @@
 from pathlib import Path
 import os
+import environ
+
+env = environ.Env()
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -9,14 +13,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = (
-    "django-insecure-+$6^h75o=_h$$bvb08*!6v(zmjnx7q93l-9#xm&x9am_(a7pjq"
-)
+SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "online-store-backend-ugkd.onrender.com",
+]
 
 
 # Application definition
@@ -112,6 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = "static/"
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -124,6 +131,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 
 # Cors
 CORS_ALLOWED_ORIGINS = [
+    "https://dmitriimikhailovv.github.io",
     "http://localhost:8080",
     # other allowed origins
 ]
