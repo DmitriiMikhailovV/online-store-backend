@@ -25,7 +25,7 @@ class Product(models.Model):
         Category, on_delete=models.CASCADE, related_name="products"
     )
     description = models.TextField()
-    image = models.ImageField(upload_to="product_images/")
+    image = models.BinaryField()
     rating = models.OneToOneField(Rating, on_delete=models.CASCADE)
 
     def __str__(self):

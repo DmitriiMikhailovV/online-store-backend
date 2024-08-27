@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import Category, Product, User, Rating, UserCart, CartItem
 from django.contrib.auth.hashers import make_password
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+import base64
 
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -36,6 +37,29 @@ class ProductSerializer(serializers.ModelSerializer):
             "image",
             "rating",
         ]
+
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        if instance.image:
+            representation["image"] = base64.b64encode(instance.image).decode(
+                "utf-8"
+            )
+        return representation
+
+    def validate_image(self, value):
+        if isinstance(value, str):
+            return value.encode("utf-8")
+        return value
+
+    def create(self, validated_data):
+        if "image" in validated_data:
+            validated_data["image"] = validated_data["image"].read()
+        return super().create(validated_data)
+
+    def update(self, instance, validated_data):
+        if "image" in validated_data:
+            validated_data["image"] = validated_data["image"].read()
+        return super().update(instance, validated_data)
 
 
 class UserSerializer(serializers.ModelSerializer):
